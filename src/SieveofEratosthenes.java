@@ -6,7 +6,7 @@ public class SieveofEratosthenes {
     /**
      * 返回小于等于max的所有素数
      * (算法:埃拉托斯特尼筛法)
-     *  该算法的分析见我博客
+     *  该算法的分析见我博客http://blog.csdn.net/o83290102o5/article/details/79491834
      * @param max
      * @return
      */
