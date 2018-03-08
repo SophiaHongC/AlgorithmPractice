@@ -22,9 +22,12 @@ public class SieveofEratosthenes {
         list.set(1, 0);
 
         int s = (int) Math.sqrt(max);
+        //遍历小于sqrt(max)的数
         for (int i = 2; i <= s; i++) {
+            //先判断是不是素数
             if (list.get(i) != 0) {
-                int a = i * 2;
+                //这里直接忽略了小于i的倍数，因为之前肯定已经出现过了。(这个优化很多别的地方都没有看到)
+                int a = i * i;
                 while (a <= max) {
                     list.set(a, 0);
                     a += i;
