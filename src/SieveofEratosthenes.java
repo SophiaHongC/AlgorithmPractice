@@ -10,16 +10,16 @@ public class SieveofEratosthenes {
      * @param max
      * @return
      */
-    static List<Integer> findPrimes(int max) {
+    static List<Long> findPrimes(int max) {
 
-        List<Integer> list = new ArrayList<>();
+        List<Long> list = new ArrayList<>();
         //为了保持索引值与数值一致，看上去更清晰，先加一个0
-        list.add(0);
+        list.add(0L);
         for (int i = 1; i <= max; i++) {
-            list.add(i);
+            list.add((long) i);
         }
         //1不是素数，去掉
-        list.set(1, 0);
+        list.set(1, 0L);
 
         int s = (int) Math.sqrt(max);
         //遍历小于sqrt(max)的数
@@ -29,7 +29,7 @@ public class SieveofEratosthenes {
                 //这里直接忽略了小于i的倍数，因为之前肯定已经出现过了。(这个优化很多别的地方都没有看到)
                 int a = i * i;
                 while (a <= max) {
-                    list.set(a, 0);
+                    list.set(a, 0L);
                     a += i;
                 }
             }
