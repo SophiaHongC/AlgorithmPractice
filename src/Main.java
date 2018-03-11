@@ -13,7 +13,10 @@ public class Main {
 //        }
         //System.out.println(PrimeAlgorithm.MinimumCommonMultiple((long)(pow(2,3)*pow(3,5)*pow(7,2)),(long)(pow(2,4)*pow(3,3))));
 
-        System.out.println(RadixConversion("FABCF", 16, 2));
+        //System.out.println(RadixConversion("F", 16, 2));
+
+        //System.out.println(BinaryOperation.BinaryAdd("10111","1010"));
+
 
 
     }
@@ -27,7 +30,6 @@ public class Main {
      * @return
      */
     public static String RadixConversion(String origin, int originRadix, int targetRadix) {
-
 
         //先转换到十进制
         int cache = 0;
