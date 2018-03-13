@@ -13,11 +13,15 @@ public class Main {
 //        }
         //System.out.println(PrimeAlgorithm.MinimumCommonMultiple((long)(pow(2,3)*pow(3,5)*pow(7,2)),(long)(pow(2,4)*pow(3,3))));
 
-        //System.out.println(RadixConversion("F", 16, 2));
+        //System.out.println(RadixConversion("22", 10, 2));
 
         //System.out.println(BinaryOperation.BinaryAdd("10111","1010"));
 
+        //System.out.println(ModularArithmetic.IsDivideExactly(123,3));
 
+        //System.out.println(10000000%11);
+
+        System.out.println(PrimeAlgorithm.EuclideanAlgorithm(36,24));
 
     }
 
