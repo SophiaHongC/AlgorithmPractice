@@ -1,33 +1,50 @@
+package com;
+
 import java.util.ArrayList;
 import java.util.Collections;
+
+import static com.PermutationAndCombination.C;
+
 
 public class Main {
 
     public static void main(String[] args) {
-//        System.out.println(PrimeAlgorithm.isPrime(289));
-//        SieveofEratosthenes.findPrimes(100).forEach(System.out::println);
-//        System.out.println(SieveofEratosthenes.findPrimes(100).size());
-        //System.out.println(PrimeAlgorithm.Factorization(1248242388888L));
+//        System.out.println(com.PrimeAlgorithm.isPrime(289));
+        //com.SieveofEratosthenes.findPrimes(1000000).forEach(System.out::println);
+//        System.out.println(com.SieveofEratosthenes.findPrimes(100).size());
+        //System.out.println(com.PrimeAlgorithm.Factorization(1248242388888L));
 //        for(int i=1;i<100;i++){
 //            System.out.println(Math.pow(i,4)%10);
 //        }
-        //System.out.println(PrimeAlgorithm.MinimumCommonMultiple((long)(pow(2,3)*pow(3,5)*pow(7,2)),(long)(pow(2,4)*pow(3,3))));
+        //System.out.println(com.PrimeAlgorithm.MinimumCommonMultiple((long)(pow(2,3)*pow(3,5)*pow(7,2)),(long)(pow(2,4)*pow(3,3))));
 
         //System.out.println(RadixConversion("22", 10, 2));
 
-        //System.out.println(BinaryOperation.BinaryAdd("10111","1010"));
+        //System.out.println(com.BinaryOperation.BinaryAdd("10111","1010"));
 
-        //System.out.println(ModularArithmetic.IsDivideExactly(123,3));
+        //System.out.println(com.ModularArithmetic.IsDivideExactly(123,3));
 
         //System.out.println(10000000%11);
 
-        System.out.println(PrimeAlgorithm.EuclideanAlgorithm(36,24));
+        //System.out.println(com.PrimeAlgorithm.EuclideanAlgorithm(36,24));
+//        for(int i=0;i<100;i++)
+//        {
+//            System.out.println((int)(com.ModularArithmetic.Random()*10000));
+//        }
+
+//        int[] arr=new int[]{1,2,54,252,321,423,562};
+//        int i = com.Search.BinarySearch(arr, 423);
+//        System.out.println(i);
+
+        //System.out.println(com.Common.Factorial(4));
+       System.out.println(C(4,2));
 
     }
 
 
     /**
      * 进制转换(1-16之间)
+     *
      * @param origin      原始数
      * @param originRadix 原始进制
      * @param targetRadix 目标进制

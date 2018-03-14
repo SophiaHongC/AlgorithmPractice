@@ -1,4 +1,10 @@
+package com;
+
+import java.util.Date;
+
 public class ModularArithmetic {
+
+    private static int key=123214;
 
     /**
      * 求两者和的模，适用于直接相加会溢出的情况
@@ -69,6 +75,12 @@ public class ModularArithmetic {
         }
     }
 
+    /**
+     * 使用线性同余法生成随机数(0-1)
+     */
+    static public float Random(){
+        return (float) ((key++*3359+7307)%9857/9857.0);
+    }
 
 
 
