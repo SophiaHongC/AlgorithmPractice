@@ -3,8 +3,6 @@ package com;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import static com.PermutationAndCombination.C;
-
 
 public class Main {
 
@@ -37,7 +35,8 @@ public class Main {
 //        System.out.println(i);
 
         //System.out.println(com.Common.Factorial(4));
-       System.out.println(C(4,2));
+        //System.out.println(C(4,2));
+
 
     }
 

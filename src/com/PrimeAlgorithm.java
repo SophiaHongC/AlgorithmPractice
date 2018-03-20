@@ -98,26 +98,25 @@ public class PrimeAlgorithm {
         long aLong = GreatestCommonDivisor(num1, num2);
         long a = num1 /= aLong;
         long b = num2 /= aLong;
-        return aLong*a*b;
+        return aLong * a * b;
     }
 
 
     /**
      * 欧几里得算法求最大公约数
+     *
      * @param num1
      * @param num2
      * @return
      */
-    static public long EuclideanAlgorithm(long num1,long num2){
-        long max=num1>num2?num1:num2;
-        long min=num1>num2?num2:num1;
-        if(max%min==0){
+    static public long EuclideanAlgorithm(long num1, long num2) {
+        long max = num1 > num2 ? num1 : num2;
+        long min = num1 > num2 ? num2 : num1;
+        if (max % min == 0) {
             return min;
-        }
-        else
-        {
-            long yushu=max%min;
-            return EuclideanAlgorithm(min,yushu);
+        } else {
+            long yushu = max % min;
+            return EuclideanAlgorithm(min, yushu);
         }
     }
 

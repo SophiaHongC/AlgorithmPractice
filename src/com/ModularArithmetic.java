@@ -1,10 +1,8 @@
 package com;
 
-import java.util.Date;
-
 public class ModularArithmetic {
 
-    private static int key=123214;
+    private static int key = 123214;
 
     /**
      * 求两者和的模，适用于直接相加会溢出的情况
@@ -68,8 +66,7 @@ public class ModularArithmetic {
             String s = Long.toString(dividend);
             int a = Integer.parseInt(s.charAt(s.length() - 1) + "");
             return a == 5 || a == 0;
-        }
-        else {
+        } else {
             //无优化
             return dividend % divisor == 0;
         }
@@ -78,10 +75,9 @@ public class ModularArithmetic {
     /**
      * 使用线性同余法生成随机数(0-1)
      */
-    static public float Random(){
-        return (float) ((key++*3359+7307)%9857/9857.0);
+    static public float Random() {
+        return (float) ((key++ * 3359 + 7307) % 9857 / 9857.0);
     }
-
 
 
 }
