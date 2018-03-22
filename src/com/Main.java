@@ -39,8 +39,12 @@ public class Main {
         //System.out.println(C(4,2));
 
         //System.out.println(Arrays.toString(Sort.InsertionSortDesc(new int[]{3,521,23,22,4523,21,532,321,252,42})));
-        System.out.println(Arrays.toString(Sort.ChooseSort(new int[]{3,521,23,22,4523,21,532,321,252,42})));
+       // System.out.println(Arrays.toString(Sort.ChooseSort(new int[]{3,521,23,22,4523,21,532,321,252,42})));
 
+        //System.out.println(Sort.Merge(Arrays.asList(1,3,5,7,9),Arrays.asList(2,8,10,20,23)));
+
+
+        System.out.println(Sort.MergeSort(new int[]{3,521,23,22,4523,21,532,321,252,42}));
     }
 
 
