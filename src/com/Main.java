@@ -38,7 +38,8 @@ public class Main {
         //System.out.println(com.Common.Factorial(4));
         //System.out.println(C(4,2));
 
-        System.out.println(Arrays.toString(Sort.InsertionSortDesc(new int[]{3,521,23,22,4523,21,532,321,252,42})));
+        //System.out.println(Arrays.toString(Sort.InsertionSortDesc(new int[]{3,521,23,22,4523,21,532,321,252,42})));
+        System.out.println(Arrays.toString(Sort.ChooseSort(new int[]{3,521,23,22,4523,21,532,321,252,42})));
 
     }
 
