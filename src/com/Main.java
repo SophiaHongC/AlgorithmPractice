@@ -1,8 +1,9 @@
 package com;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
+
+import static com.PermutationAndCombination.*;
 
 
 public class Main {
@@ -44,7 +45,31 @@ public class Main {
         //System.out.println(Sort.Merge(Arrays.asList(1,3,5,7,9),Arrays.asList(2,8,10,20,23)));
 
 
-        System.out.println(Sort.MergeSort(new int[]{3,521,23,22,4523,21,532,321,252,42}));
+       // System.out.println(Sort.MergeSort(new int[]{3,521,23,22,4523,21,532,321,252,42}));
+
+//        for(int i=1;i<100;i++){
+//            if(236%i==0){
+//                System.out.println(i);
+//            }
+//        }
+
+        ArrayList<Integer> testList=new ArrayList<>();
+        for(int i=0;i<1000;i++){
+            testList.add((int) (Math.random()*1000));
+        }
+
+        ArrayList<Integer> testList2=new ArrayList<>();
+        testList.add(1);
+        testList.add(2);
+
+
+        System.out.println(Recursion.LinearSearch(testList,2));
+
+
+        System.out.println((float)C(19,9)/C(20,10));
+
+
+
     }
 
 
